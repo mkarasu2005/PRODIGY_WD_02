@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    font-family: sans-serif;
+    font-size:16px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outercircle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.animationbg{
+    background: linear-gradient(-45deg, #A7ACD9,#23CE6B,#0075C4,#FFC145);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.container{
+    background: linear-gradient(-45deg, #A7ACD9,#D81E5B,#4D2D52,#FFC145);
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite;
+    padding: 30px;
+    padding-bottom: 105px;
+    border-radius: 25px;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.innercircle{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.txt{
+    color: white;
+}
+.min{
+    font-size: 48px;
+}
+.sec{
+    font-size: 40px;
+}
+.msec{
+    font-size: 25px;
+}
+.wrapper{
+    width: 250px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.laps{
+    list-style: none;
+    color: white;
+    width: 250px;
+    height: 300px;
+    overflow:auto;
+    position: relative;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+.laps::-webkit-scrollbar{
+    display: none;
+}
+.lapitem{
+    display: block;
+    width: 100%px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #444;
+    border-radius: 50px;
+    margin-bottom: 25px;
+}
+.number{
+    color: white;
+}
+.time{
+    display: inline;
+    margin-left: 30px;
+}
+.lapclear{
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    border: 3px solid white;
+
+}
+.lapclear:hover{
+    opacity: 0.5;
+}
+.hidden{
+    visibility: hidden;
+}
